@@ -1,0 +1,24 @@
+.childAvatar img{
+    border-radius: 10%;
+    height: 100%;
+    background-size: cover;
+    height: 95%;
+    width: 95%;
+}
+.childAvatar img:hover{
+    opacity: 0.5;
+    cursor: pointer;
+    border: 5px solid gold;
+    overflow: hidden;
+    
+}
+.childAvatar{
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+.parentAvatar img{
+        border-radius:3%;
+        width: 100%;
+
+}
