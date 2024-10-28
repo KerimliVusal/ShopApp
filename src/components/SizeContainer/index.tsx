@@ -9,7 +9,7 @@ type SizeContainerProps = {
 }
 const SizeContainer: React.FC<SizeContainerProps> = ({ handleCountChange, counter,changeStyle }) => {
     return (
-        <Box className={changeStyle?'':styles.sizeContainer} maxWidth='20%' height='80px'>
+        <Box className={changeStyle?'':styles.sizeContainer} maxWidth='20%' minWidth='100px' height='80px'>
             <Flex justify='between' align='center' minHeight='100%'>
                 <Box >
                     <MinusIcon className={styles?.icon} onClick={() => handleCountChange(-1)} />

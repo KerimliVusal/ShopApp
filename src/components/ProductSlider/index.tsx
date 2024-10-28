@@ -6,22 +6,19 @@ import styles from './index.module.css';
 
 
 const ProductSlider: React.FC = () => {
-    const [currentImage, setCurrentImage] = useState<number>(1);
-    console.log({ as: currentImage });
-
+    const [currentImage, setCurrentImage] = useState<number>(0);
+    
     const handleChangeProductImage = (index: number) => {
         setCurrentImage(index);
-        console.log({ a: `/images/product${currentImage}.jpg` });
-
     };
 
     return (
-        <Box maxWidth="700px" m="20px" ml="30px">
-            <Box ml='50px'
+        <Box maxWidth="700px" m="20px" ml="30px" >
+            <Box ml='50px' className={styles.parentBox}
             ><Card className={styles.parentAvatar} >
                     <Avatar
                         size="1"
-                        src={`/images/product${currentImage}.jpg` as string}
+                        src={images?.[currentImage]}
                         radius="none"
                         fallback="A"
                         m="10px"
@@ -37,7 +34,7 @@ const ProductSlider: React.FC = () => {
                             maxWidth="90%"
                             minHeight='170px'
                             className={styles.childAvatar}
-                            onClick={() => handleChangeProductImage(index + 1)}
+                            onClick={() => handleChangeProductImage(index)}
                         >
                             <Avatar
                                 size="3"

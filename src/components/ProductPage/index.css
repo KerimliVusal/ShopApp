@@ -34,4 +34,20 @@
     width: 100%;
     background-size: cover;
   }
+  .product-page-flex {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .product-page-flex {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .product-page-container {
+      padding: 0 10px;
+    }
+  }
   

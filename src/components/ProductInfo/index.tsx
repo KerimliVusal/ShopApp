@@ -49,7 +49,7 @@ const ProductInfo: React.FC = () => {
                 <Box maxWidth='80%'>
                     <Heading as='h2' className={styles.infoHeader} style={{ fontSize: '25px' }} mb='20px'>SNEAKER COMPANY</Heading>
                     <Box maxWidth='80%' mb='30px'>
-                        <Text style={{ fontSize: '54px', fontWeight: '600', letterSpacing: '3.2px' }} >
+                        <Text style={{ fontSize: '54px', fontWeight: '600', letterSpacing: '3.2px' }} className={styles.text}>
                             Fall Limited Edition Sneakers</Text>
                     </Box>
                     <Box maxWidth='90%'>
@@ -71,9 +71,9 @@ const ProductInfo: React.FC = () => {
                         </Text>
                     </Box>
                     <Box mt='150px' minWidth='100%'>
-                        <Flex justify='between' align='center'>
-                       <SizeContainer handleCountChange={handleCountChange} counter={counter} changeStyle={false}/>
-                        <Box minWidth='70%'>
+                        <Flex justify='between' align='center' >
+                       <SizeContainer handleCountChange={handleCountChange} counter={counter} changeStyle={false} />
+                        <Box minWidth='70%' >
                         <CustomButton cartItem={false}>
                             {added?<BookmarkFilledIcon className={styles.addIcon} onClick={()=>handleRemoveItem({ id: 1, name: 'Art Piece A', price: 120,src:'https://product-page-orcin-phi.vercel.app/assets/image-product-4-DXKEAM1K.jpg'})}/>:<BookmarkIcon className={styles.addIcon} onClick={()=>handleAddItem({ id: 1, name: 'Art Piece A', price: 120,src:'https://product-page-orcin-phi.vercel.app/assets/image-product-4-DXKEAM1K.jpg'})}/>} <Text style={{fontSize:'24px'}}>Add to cart</Text>
                         </CustomButton>

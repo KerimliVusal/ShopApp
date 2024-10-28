@@ -29,3 +29,86 @@ background-repeat: no-repeat;
 width: 100%;
 height: 100%;
 }
+@media (max-width: 768px) {
+    .parentBox{
+        margin-left: 0 !important;
+    }
+    .parentAvatar {
+        width: 80%;
+      height: 50%;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+    .parentAvatar img{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .parentBox{
+        margin: 0 !important;
+        padding: 0 !important;  
+    }
+    .childBox{
+        margin-top: 0;
+        margin: 0 !important;
+
+    }
+    .childAvatar{
+        width: 80px;
+    }
+    .mainImage {
+        max-width: 40%;
+    }
+    
+    .thumbnailImage {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .thumbnailImage {
+        width: 40px;
+        height: 40px;
+    }
+    .parentBox{
+        margin-left: 0 !important;
+    }
+    .parentAvatar {
+        width: 100%;
+      height: 50%;
+      margin: 0 !important;
+      padding: 0 !important;
+      margin-left: 0 !important;
+    }
+    .parentBox{
+        margin: 0 !important;
+    }
+    .parentAvatar img{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .parentBox{
+        margin: 0 !important;
+        padding: 0 !important;  
+    }
+    .childBox{
+        margin-top: 0;
+        margin: 0 !important;
+        width: 60%;
+
+    }
+    .childAvatar{
+        width: 80px;
+    }
+    .mainImage {
+        max-width: 40%;
+    }
+    
+    .thumbnailImage {
+        width: 50px;
+        height: 50px;
+    }
+}

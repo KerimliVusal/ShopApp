@@ -12,7 +12,6 @@ type CartItemProps = {
     items: { id: number; name: string; price: number, src: string }[];
 };
 const CartItem: React.FC<CartItemProps> = ({ children, items }) => {
-    console.log({ items });
     const { removeItem, counter, handleCountChange, added } = useCart();
 
     return (

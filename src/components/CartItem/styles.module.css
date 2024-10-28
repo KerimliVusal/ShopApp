@@ -140,3 +140,20 @@ a {
 		transform: translateX(0);
 	}
 }
+@media (max-width: 768px) {
+    .HoverCardContent{width: 40%;
+        flex-direction: column;
+    }
+    .Text{
+        font-size: 12px;
+    }
+}
+@media (max-width: 480px) {
+    .HoverCardContent{width: 40%;
+        flex-direction: column;
+    }
+    .Text{
+        font-size: 12px;
+    }
+
+}
