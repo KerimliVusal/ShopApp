@@ -3,11 +3,16 @@
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000;
-    height: 100px;
-    background-color: #f5f5f5;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
+    z-index: 1;
+    height: 140px;
+    border-bottom: 1px  rgb(214, 214, 214); 
+    border-bottom-style: ridge;
+ }
+ .companyName{
+    color: rgb(221, 188, 0);
+    text-shadow: -5px 5px 5px black;
+    font-weight: 900;
+ }
   .navbar p{
     font-size: 40px!important;
     letter-spacing: 3px;

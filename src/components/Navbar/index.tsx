@@ -22,8 +22,8 @@ const itemsInCart: Item[] = [
 const Navbar: React.FC = () => {
     const { items } = useCart();
   return (
-    <Flex justify="between" align="center" p="20px" className={styles.navbar} style={{ backgroundColor: '#f5f5f5' }}>
-      <Text  as='p' weight="bold" ml="20px">
+    <Flex justify="between" align="center" p="20px" className={styles.navbar}>
+      <Text  as='p' weight="bold" ml="20px" className={styles.companyName}>
         SNEAKER
       </Text>
       <CartItem items={items}>

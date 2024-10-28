@@ -5,8 +5,9 @@ import {ProductInfo} from '..';
 import { Box, Flex } from '@radix-ui/themes';
 
 const ProductPage: React.FC = () => {
+    
   return (
-    <Box mt='100px'>
+    <Box mt='150px'>
     <Flex align='center'>
       <ProductSlider />
       <ProductInfo />
