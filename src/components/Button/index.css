@@ -1,6 +1,5 @@
 .customButton {
     border-radius: 10px!important;
-    padding: 26px 5px!important;
     background-color: #ff7d1a!important;
     display: flex!important;
     align-items: center!important;
@@ -12,7 +11,14 @@
     width: 100%!important;
 
   }
-  
+  .defaultPadding{
+    padding: 16px 5px!important;
+
+  }
+  .cartPadding{
+    padding: 10px 5px!important;
+
+  }
   .customButton:hover {
    opacity: 0.8;
   }

@@ -11,7 +11,7 @@ const ProductSlider: React.FC = () => {
 
     const handleChangeProductImage = (index: number) => {
         setCurrentImage(index);
-        console.log({ asA: 'work' });
+        console.log({ a: `/images/product${currentImage}.jpg` });
 
     };
 
@@ -21,7 +21,7 @@ const ProductSlider: React.FC = () => {
             ><Card className={styles.parentAvatar} >
                     <Avatar
                         size="1"
-                        src={`/images/product${currentImage}.jpg`}
+                        src={`/images/product${currentImage}.jpg` as string}
                         radius="none"
                         fallback="A"
                         m="10px"

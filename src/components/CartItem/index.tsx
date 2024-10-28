@@ -6,6 +6,7 @@ import SizeContainer from "../SizeContainer";
 import { useCart } from "../context";
 import { Box, Flex, Text } from "@radix-ui/themes";
 import { Header } from "@radix-ui/themes/dist/cjs/components/table";
+import CustomButton from "../Button";
 type CartItemProps = {
     children: React.ReactNode;
     items: { id: number; name: string; price: number, src: string }[];
@@ -26,7 +27,7 @@ const CartItem: React.FC<CartItemProps> = ({ children, items }) => {
                             <Text as='label' >
                                 Cart
                             </Text>
-                            {added ?
+                            {added ?<>
                                 <div style={{ display: "flex", flexDirection: "row", gap: 7 }}>
                                     <img
                                         className={styles.Imagelarge}
@@ -45,6 +46,14 @@ const CartItem: React.FC<CartItemProps> = ({ children, items }) => {
                                         </div>
                                     </div>
                                 </div>
+                                <Flex  mt='20px' justify='center'>
+                                    <Box as='div' minWidth='50%'>
+                                <CustomButton cartItem>
+                                        Checkout
+                                    </CustomButton>
+                                    </Box>
+                                    </Flex>
+                                </>
                                 : <Text className={styles.emptyCart}>
                                     Cart is Empty</Text>}
                         </Flex>

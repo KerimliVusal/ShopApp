@@ -74,7 +74,7 @@ const ProductInfo: React.FC = () => {
                         <Flex justify='between' align='center'>
                        <SizeContainer handleCountChange={handleCountChange} counter={counter} changeStyle={false}/>
                         <Box minWidth='70%'>
-                        <CustomButton>
+                        <CustomButton cartItem={false}>
                             {added?<BookmarkFilledIcon className={styles.addIcon} onClick={()=>handleRemoveItem({ id: 1, name: 'Art Piece A', price: 120,src:'https://product-page-orcin-phi.vercel.app/assets/image-product-4-DXKEAM1K.jpg'})}/>:<BookmarkIcon className={styles.addIcon} onClick={()=>handleAddItem({ id: 1, name: 'Art Piece A', price: 120,src:'https://product-page-orcin-phi.vercel.app/assets/image-product-4-DXKEAM1K.jpg'})}/>} <Text style={{fontSize:'24px'}}>Add to cart</Text>
                         </CustomButton>
                         </Box>
